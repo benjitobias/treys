@@ -181,8 +181,10 @@ class Evaluator:
                 print("{} HAND OVER {}".format(line, line))
                 if len(winners) == 1:
                     print("Player {} is the winner with a {}\n".format(winners[0] + 1, hand_result))
+                    return "Player {} is the winner with a {}\n".format(winners[0] + 1, hand_result)
                 else:
                     print("Players {} tied for the win with a {}\n".format([x + 1 for x in winners],hand_result))
+                    return "Players {} tied for the win with a {}\n".format([x + 1 for x in winners],hand_result)
 
 
 class PLOEvaluator(Evaluator):
