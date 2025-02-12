@@ -179,20 +179,23 @@ class Evaluator:
                     print("Players {} are tied for the lead.\n".format([x + 1 for x in winners]))
             """
             # otherwise on all other streets
-            # else:
-            hand_result = self.class_to_string(self.get_rank_class(self.evaluate(hands[winners[0]], board)))
-            print()
-            print("{} HAND OVER {}".format(line, line))
-            if len(winners) == 1:
+            # else:            
+            # hand_result = self.class_to_string(self.get_rank_class(self.evaluate(hands[winners[0]], board)))            
+            #print("{} HAND OVER {}".format(line, line))
+                        
+            #if len(winners) == 1:
                 #print("Player {} is the winner with a {}\n".format(winners[0] + 1, hand_result))
                 #return "Player {} is the winner with a {}\n".format(winners[0] + 1, hand_result)
-                print("Player {} is the winner with a {}\n".format(winners[0], hand_result))
-                return "Player {} is the winner with a {}\n".format(winners[0], hand_result)
-            else:
+                #print("Player {} is the winner with a {}\n".format(winners[0], hand_result))
+                #return "Player {} is the winner with a {}\n".format(winners[0], hand_result)                
+            #else:
                 #print("Players {} tied for the win with a {}\n".format([x + 1 for x in winners],hand_result))
                 #return "Players {} tied for the win with a {}\n".format([x + 1 for x in winners],hand_result)
-                print("Players {} tied for the win with a {}\n".format([x for x in winners],hand_result))
-                return "Players {} tied for the win with a {}\n".format([x for x in winners],hand_result)
+                #print("Players {} tied for the win with a {}\n".format([x for x in winners],hand_result))
+                #return "Players {} tied for the win with a {}\n".format([x for x in winners],hand_result)                
+            
+            return winners
+
 
 
 class PLOEvaluator(Evaluator):
