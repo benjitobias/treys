@@ -199,7 +199,7 @@ class Card:
 
         r = Card.STR_RANKS[rank_int]
 
-        return "[{}{}]".format(r,s)
+        return "{}{}".format(r,s)
 
     @staticmethod
     def print_pretty_card(card_int: int) -> None:
