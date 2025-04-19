@@ -194,7 +194,7 @@ class Evaluator:
                 #print("Players {} tied for the win with a {}\n".format([x for x in winners],hand_result))
                 #return "Players {} tied for the win with a {}\n".format([x for x in winners],hand_result)                
             
-            return winners
+        return winners
 
 
 
